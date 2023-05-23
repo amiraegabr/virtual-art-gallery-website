@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>'
+    <link rel="stylesheet" href="signupstyle.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="containertwo">
+            <form action="register-process.php" method="post" name="myform">
+                <h1>Register</h1>
+                <input type="email" name="email" placeholder="Enter your Email" id="email">
+                <input type="password" name="password" placeholder="Enter your Password" id="password">
+                <input type="password" name="cpassword" placeholder="Enter your password again" id="cpassword">
+                <button id="button" type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const btn = document.getElementById("button")
+
+        btn.addEventListener('click', Checked); //checked function
+
+        function Checked() {
+            if (document.myform.emailvalue == "") {
+                alert("Please enter email address");
+                document.myform.email.focus();
+                return false;
+            } else if (document.myform.password.value = "") {
+                alert("Please enter password");
+                document.myform.password.focus();
+                return false;
+            // } else if (document.myform.password.value != document.myform.cpassword.value) {
+            //     alert("Password doesn't match");
+            //     document.myform.cpassword.focus();
+            //     return false;
+            } else {
+                document.myform.submit();
+                return true;
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>
