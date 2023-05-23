@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Vee gallery</title>
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Vee gallery</a>
+
+        <nav class="navbar">
+            <a href="homepage.html">Home</a>
+            <a href="tours.html">Art tours</a>
+            <a href="artworks.html">Artworks</a>
+            <a href="artists.html">Artists</a>
+            <a href="login.html" class="active">Log in</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="login-box">
+            <div class="page-box">
+                <div class="login-title">
+                    <h2 class="loginTitle-text">Log in</h2>
+                    <p class="user-email">Please log in to use the platform</p>
+
+                </div>
+                <div class="page email-page">
+                    <div class="input-box">
+                        <input type="text" class="email" autofocus required>
+                        <label> Enter your email</label>
+                    </div>
+
+                    <!-- <div class="guest-mode">
+                        <p>Not your computer? use guest mode to login privatly.
+                        </p>
+                        <a href="#">Learn more</a>
+                    </div> -->
+
+                    <div class="btn-box">
+                        <p>First time user?<a href="#">Create an account</a>
+                        </p>
+                        <button class="btn-next">Next</button>
+                    </div>
+                </div>
+
+                <div class="page password-page">
+                    <div class="input-box">
+                        <input type="password" class="password" required>
+                        <label> Enter your password</label>
+                    </div>
+                    <div class="forgot show">
+                        <a href="#">Forgot password?</a>
+                        <label><input type="checkbox" class="checkbox-pass">Show password </label>
+                    </div>
+
+                    <div class="btn-box">
+                        <button class="btn-back">Back</button>
+                        <button type="submit" class="btn-login" onclick="window.location.href='homepage logged.html';">Log in</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
